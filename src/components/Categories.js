@@ -1,8 +1,6 @@
 import React from 'react';
 
-const Categories = ({ filterMenuItems, menuItems }) => {
-  let categories = menuItems.map((item) => item.category);
-  categories = ['all', ...new Set(categories)];
+const Categories = ({ filterMenuItems, categories}) => {
   return (
     <div className='btn-container'>
       {categories.map((category, index) => {
